@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    
+    int a = 3; 
+    int* b = &a; //& Declare the address of particular variable
+    cout<<b<<endl;
+    cout<<*b;//*b execute the value stored at particular variable
+    return 0;
+}

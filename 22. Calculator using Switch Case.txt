@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int x,y,num,product;
+    char sign;
+    cout<<"Select an operator: +,*,-,/ ";
+    cin>>sign;
+    cout<<"Enter Number_1: ";
+    cin>>x;
+    cout<<"Enter Number_2: ";
+    cin>>y;
+    
+    switch(sign){
+         case '+':
+      cout << x << " + " << y << " = " << x + y;
+      break;
+
+        case '*':
+        cout <<  x << " * " << y << " = " << x * y;
+      break;
+      
+      case '-':
+          cout <<  x << " - " << y << " = " << x - y;
+      break;
+      
+          cout <<  x << " / " << y << " = " << x / y;
+      break;
+    }
+    
+    return 0;
+}

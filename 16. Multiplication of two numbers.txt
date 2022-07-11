@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int x,y,result=0;
+    
+    cout<<"Enter the first number ";
+    cin>>x;
+    cout<<"Enter the second number ";
+    cin>>y;
+    
+    for(int i=0;i<y;i++){
+        for(int j=0;j<x;j++)
+            result++;
+        
+    }
+    cout<<"the product is "<<result;
+    return 0;
+}

@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x,y,i;
+    bool prime = true;
+    
+    cout<<"Enter two values ";
+    cin>>x>>y;
+    cout<<"The prime numbers between "<<x<<"and "<<y<<"are ";
+    
+    while(x<y){
+        prime = true;
+    }
+    if(x==0 || x==1){
+        prime = false;
+    }
+    for(i=2;i<=x/2;++i){
+        if(low%2==0){
+            prime = false;
+            break;
+        }
+    }
+    if (prime)
+      cout << x << ", ";
+
+    ++;
+  }
+
+  return 0;
+}
+
+}

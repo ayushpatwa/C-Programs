@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int x,y,a,b,c,d,gcd;
+    
+    cout<<"Enter the value of numerator_1: ";
+    cin>>a;
+    cout<<"Enter the value of denominator_1: ";
+    cin>>b;
+    cout<<"Enter the value of numerator_2: ";
+    cin>>c;
+    cout<<"Enter the value of denominator_2: ";
+    cin>>d;
+    
+    x = (a*d)+(c*b);
+    y = b*d;
+    
+    for(int i=1;i<=x && i<=y;++i){
+        if(x%i==0 && y%i==0)
+        gcd = i;
+    }
+    cout<<"The added fraction is "<<x/gcd <<"/"<<y/gcd;
+    cout<<endl;
+    return 0;
+}
